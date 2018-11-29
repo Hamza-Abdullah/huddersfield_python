@@ -4,8 +4,14 @@ draws = 0
 losses = 0
 
 for count in range(5):
-    scored = int(input("Goals scored in football match #" + str(count + 1) + ": "))
-    against = int(input("Goals against in football match #" + str(count + 1) + ": "))
+    while True:
+        try:
+            scored = int(input("Goals scored in football match #" + str(count + 1) + ": "))
+            against = int(input("Goals against in football match #" + str(count + 1) + ": "))
+            break
+        except ValueError:
+            print("Please enter a valid input.")
+
     result = scored - against
     if result > 0:
         wins += 1
