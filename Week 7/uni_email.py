@@ -53,6 +53,7 @@ while True:
     question = question.upper()
     disconnect = random.randint(0, 100)
     if question == "GOODBYE" or disconnect < 16:
+        print("Disconnected")
         break
     elif word_in_question(question, "LIBRARY") is True:
         print("The library is closed today.")
