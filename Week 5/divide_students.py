@@ -11,7 +11,6 @@ while num_of_pc < 1:
     except ValueError:
         print("That value for number of PCs is not valid. Please try again.")
 
-students % num_of_pc == 0
 if students % num_of_pc == 0:
     num_of_labs = str(students // num_of_pc)
 else:
